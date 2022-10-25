@@ -15,7 +15,7 @@ const images = [
 
 const galleryListEl = document.querySelector("ul");
 const element = images
-  .map((el) => `<li><img src = '${el.url}' alt = '${el.alt}' width="100%"></li>`
+  .map((el) => `<li><img src = '${el.url}' alt = '${el.alt}' width="640px"></li>`
   )
   .join("");
 
@@ -23,9 +23,9 @@ galleryListEl.insertAdjacentHTML("afterbegin", element);
 
 document.body.style.margin = '10px';
 
-
 galleryListEl.style.cssText = 
 `display: flex;
+  align-items: center;
   flex-direction: column;
   list-style-type: none;
   margin: 0;
